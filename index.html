@@ -21,6 +21,11 @@
 <!---Content-->
 <body>
 
+    <audio id="audio">
+        <source src="puphymn.ogg" type="audio/ogg">
+        <source src="puphymn.m4a" type="audio/mpeg">
+    </audio>    
+
     <!---Header-->
     <div class="header">
         <a href="#"><img class="logo" src="images/puplogo.png" alt="PUPSRC LOGO"></a>
@@ -35,7 +40,7 @@
                     <button class="dropbtn">About</button>
                     <div class="dropdown-content">
                         <a href="#">Vision and Mission</a>
-                        <a href="#">Hymn</a>
+                        <a href="#" class = "hymn">Hymn </a>
                         <a href="#">History</a>
                         <a href="#">Campus Virtual Tour</a>
                         <a href="#">Board of Regents</a>
@@ -86,20 +91,32 @@
         </div>
     </section>
     <section>
-        <div class="container">
-            <h2>Announcements</h2>
-            <div class="announcement-container">
+        <div class="container" style="background-image: url('images/img3.jpg');">
+            <div><h2></h2>
+            <img src="images/img1.jpg">
+            </div>           
+            <div>
+                <h2>Announcements</h2>
+                <h5>Important Information Regarding ID Application Processing:</h5>
+                <h5>Please be advised that applications for IDs will be accepted until December 9, 2023. 
+                Applications received after this date will not be processed in this current batch.</h5>
+
+                <h5>We are committed to processing applications efficiently and accurately. Once this batch is complete, we will announce the next processing window and associated deadlines. 
+                We appreciate your understanding and cooperation.</h5>
                 
+                <h3>LATEST NEWS</h3>
+                
+                <h5>Exciting news for the future Iskolar ng Bayan! The online application for PUP Santa Rosa Branch College Entrance Test (PUPCET) is open from January 3 to March 31, 2024. 
+                Get ready to embark on your academic journey with us.</h5>
+                
+                <h3>CONGRATULATIONS TO OUR NEW LICENSED ELECTRONICS ENGINEERS AND TECHNICIANS!</h3>
+                
+                <h5>100% Passing Rate for Electronics Technician Licensure Examination(*NP:75.77%)</h5>
+                
+                <h5>50% Passing Rate for Electronics Engineer Licensure Examination (*NP: 47.84%)</h5>
             </div>
-        </div>
-    </section>
-    
-    <!-- Latest News -->
-    <section>
-        <div class="container">
-            <h2>Latest News from PUPSRC</h2>
-            <div class="news-container">
-                
+            <div><h2></h2>
+            <img src="images/img2.jpg">
             </div>
         </div>
     </section>
@@ -111,7 +128,6 @@
             <p>Email: starosa@pup.edu.ph</p>
             <p>Contact: 0961 802 3780 ⦁ 0916 703 9775</p>
             <p>LCA Blvd., Tiongco Subdivision Tagapo Santa Rosa, Laguna | 4026 | Philippines</p>
-            <!-- Add more contact information as needed -->
         </div>
         <div class="social-icons">
             <!-- Change icons to jpg/png file -->
@@ -124,6 +140,16 @@
     </div>
 
     <script src="javascript/script.js"></script>
+    <script>
+        document.getElementById('joinButton').addEventListener('click', function() {
+            var audio = document.getElementById('hymn');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        });
+    </script>
 </body>
 
 </html>
