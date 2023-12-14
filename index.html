@@ -19,41 +19,40 @@
 </head>
 
 <!---Content-->
-<body>
-
+<body>   
     <!---Header-->
     <div class="header">
-        <a href="#"><img class="logo" src="images/puplogo.png" alt="PUPSRC LOGO"></a>
+        <a href="index.html"><img class="logo" src="images/puplogo.png" alt="PUPSRC LOGO"></a>
         <div class="header-content">
             <div class="header-name">POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</div>
             <div class="header-subname">Santa Rosa Campus</div>
         </div>
         <div class="navbar-right">
             <div class="navbar">
-                <a href="#home">Home</a>
+                <a href="index.html">Home</a>
                 <div class="dropdown">
                     <button class="dropbtn">About</button>
                     <div class="dropdown-content">
-                        <a href="#">Vision and Mission</a>
-                        <a href="#">Hymn</a>
-                        <a href="#">History</a>
-                        <a href="#">Campus Virtual Tour</a>
-                        <a href="#">Board of Regents</a>
-                        <a href="#">University Officials</a>
+                        <a href="vision_mission.html">Vision and Mission</a>
+                        <a href="hymn.html" class = "hymn">Hymn </a>
+                        <a href="history.html">History</a>
+                        <a href="campus_virtual_tour.html">Campus Virtual Tour</a>
+                        <a href="board_of_regents.html">Board of Regents</a>
+                        <a href="university_officials.html">University Officials</a>
                     </div>
                 </div>
-                <a href="#home">Quick Links</a>
+                <a href="quick_links.html">Quick Links</a>
                 <div class="dropdown">
                     <button class="dropbtn">Online Services</button>
                     <div class="dropdown-content">
-                        <a href="#">CVASS</a>
-                        <a href="#">Inquiry/Request</a>
-                        <a href="#">Set Appointment</a>
-                        <a href="#">Check Appointment Status</a>
-                        <a href="#">All Services</a>
+                        <a href="cvass.html">CVASS</a>
+                        <a href="inquiry_request.html">Inquiry/Request</a>
+                        <a href="appointment.html">Set Appointment</a>
+                        <a href="appointment_status.html">Check Appointment Status</a>
+                        <a href="services.html">All Services</a>
                     </div>
                 </div>
-                <a href="#home">Contact</a>  
+                <a href="contact.html">Contact</a>  
             </div>
         </div>
     </div>
@@ -87,19 +86,31 @@
     </section>
     <section>
         <div class="container">
-            <h2>Announcements</h2>
-            <div class="announcement-container">
+            <div><h2>Latest News</h2>
+            <img src="images/img1.jpg">
+            </div>           
+            <div>
+                <h2>Announcements</h2>
+                <h5>Important Information Regarding ID Application Processing:</h5>
+                <h5>Please be advised that applications for IDs will be accepted until December 9, 2023. 
+                Applications received after this date will not be processed in this current batch.</h5>
+
+                <h5>We are committed to processing applications efficiently and accurately. Once this batch is complete, we will announce the next processing window and associated deadlines. 
+                We appreciate your understanding and cooperation.</h5>
                 
+                <h3>LATEST NEWS</h3>
+                
+                <h5>Exciting news for the future Iskolar ng Bayan! The online application for PUP Santa Rosa Branch College Entrance Test (PUPCET) is open from January 3 to March 31, 2024. 
+                Get ready to embark on your academic journey with us.</h5>
+                
+                <h3>CONGRATULATIONS TO OUR NEW LICENSED ELECTRONICS ENGINEERS AND TECHNICIANS!</h3>
+                
+                <h5>100% Passing Rate for Electronics Technician Licensure Examination(*NP:75.77%)</h5>
+                
+                <h5>50% Passing Rate for Electronics Engineer Licensure Examination (*NP: 47.84%)</h5>
             </div>
-        </div>
-    </section>
-    
-    <!-- Latest News -->
-    <section>
-        <div class="container">
-            <h2>Latest News from PUPSRC</h2>
-            <div class="news-container">
-                
+            <div><h2></h2>
+            <img src="images/img2.jpg">
             </div>
         </div>
     </section>
@@ -111,7 +122,6 @@
             <p>Email: starosa@pup.edu.ph</p>
             <p>Contact: 0961 802 3780 ⦁ 0916 703 9775</p>
             <p>LCA Blvd., Tiongco Subdivision Tagapo Santa Rosa, Laguna | 4026 | Philippines</p>
-            <!-- Add more contact information as needed -->
         </div>
         <div class="social-icons">
             <!-- Change icons to jpg/png file -->
@@ -124,6 +134,16 @@
     </div>
 
     <script src="javascript/script.js"></script>
+    <script>
+        document.getElementById('joinButton').addEventListener('click', function() {
+            var audio = document.getElementById('hymn');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        });
+    </script>
 </body>
 
 </html>
