@@ -263,6 +263,11 @@ body {
     display: block;
     margin: auto;
 }
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
 
 /* vision-mission */
 .container-vm{
@@ -304,11 +309,6 @@ body {
     color: #800;
 }
 
-@media screen and (max-width: 768px) {
-    .container {
-        grid-template-columns: 1fr;
-    }
-}
 /* HYMN */
 .container-h{
     padding-right: 15px;
@@ -329,3 +329,5 @@ body {
     color: #666;
     font-family:  Verdana, Geneva, Tahoma, sans-serif;
 }
+
+/* HISTORY */
