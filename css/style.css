@@ -5,18 +5,21 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    /* background-image: url('images/img3.jpg');
-    background-size: cover;  */
   }
-
+.text-title {
+    font-family: 'Noto Sans', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+    color: #800;
+}
 .header {
-    background-color: rgb(86, 0, 23) ;
+    background-color: rgb(86, 0, 23);
     color: #fff;
     padding: 10px;
     display: flex;
-    /* align-items: left; */
 }
-
 .logo {
     width: auto; 
     height: 70px; 
@@ -26,7 +29,6 @@ body {
     padding-left: 25px;
     padding-right: 15px;
 }
-
 .header-name{
     font-family: Cinzel,Arial,Helvetica,sans-serif;
     margin: 0;
@@ -34,20 +36,16 @@ body {
     font-weight: bold;
     padding-top: 12px;
 }
-
 .header-subname{
     font-family: Cinzel,Arial,Helvetica,sans-serif;
     margin: 0;
     text-align: start;
     font-size: large;
-    /* padding-top: 1px; */
 }
-
 .header-content {
     display: flex;
     flex-direction: column;
 }
-
 .footer {
     background-color: #1d1c1c;
     color: #fff;
@@ -59,24 +57,20 @@ body {
     align-items: center;
     margin-top: auto;
 }
-
 .social-icons {
     display: flex;
     padding-right: 25px;
 }
-
 .social-icon {
     margin-left: 20px;
     color: #fff;
     font-size: 24px;
 }
-
 .contact-info {
     text-align: left;
     padding-right: 25px;
     padding-left: 25px;
 }
-
 .contact-info p {
     margin: 0;
     font-size: 14px;
@@ -95,8 +89,6 @@ body {
     display: flex;
     justify-content: flex-end;
   }
-
-
 .navbar a {
     display: block;
     float: left;
@@ -106,15 +98,12 @@ body {
     padding: 14px 16px;
     text-decoration: none;  
 }
-
-
 .dropdown {
     float: left;
     overflow: hidden;
     border-color: rgb(86, 0, 23);
     border-width: 10px;
 }
-
 .dropdown .dropbtn {
     font-size: 16px;  
     border: none;
@@ -125,12 +114,10 @@ body {
     font-family: inherit;
     margin: 0;
     
-}
-  
+} 
 .navbar a:hover, .dropdown:hover .dropbtn {
     border-radius: 5px;
 }
-  
 .dropdown-content {
     border-radius: 5px;
     display: none;
@@ -141,16 +128,13 @@ body {
     z-index: 1;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
- 
 .dropdown.right {
     float: right;
 }
-
 .dropdown.right .dropdown-content {
     left: auto;
     right: 0;
 }
-
 .dropdown-content a {
     float: none;
     color: rgb(56, 4, 18);
@@ -159,16 +143,13 @@ body {
     display: block;
     text-align: left;
     font-size: 12px;
-}
-  
+} 
 .dropdown-content a:hover {
     background-color: #ddd;
 }
-  
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
 
 /* Slideshow/Carousel */
 * {box-sizing:border-box}
@@ -182,9 +163,9 @@ body {
     overflow: hidden;
   }
   
-  .mySlides {
-      display: block;
-  }
+.mySlides {
+    display: block;
+}
 
 .prev, .next {
   cursor: pointer;
@@ -245,12 +226,13 @@ body {
   to {opacity: 1}
 }
 
+/* INDEX CONTENT */
 .container {
     min-height: 100vh; 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    background-color: rgb(56, 4, 18);
+    background-color:  rgb(86, 0, 23);
     padding: 10px;
     padding-top: 20px;
     padding-bottom: 40px;
@@ -260,7 +242,7 @@ body {
     border-radius: 5px;
     min-height: 100%;;
     gap: 10px;
-    background-color: #ffffff9e;
+    background-color: #ffffff;
     padding: 20px;
     display:block;
     margin-bottom: auto;
@@ -271,6 +253,43 @@ body {
     display: block;
     margin: auto;
 }
+.page-content-i{
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 0;
+}
+.page-content-i p {
+    margin: 30px 0 0 0;
+    line-height: 2;
+    color: #666;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+.page-content-i h1,h2,h3,h4,h5,h6 {
+    margin: 30px 0 0 0;
+    line-height: 2;
+    color: #666;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Scroll to Top */
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color:  rgb(86, 0, 23);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #scrollToTopBtn:hover {
+    background-color:  goldenrod;
+  }
+  
 @media screen and (max-width: 768px) {
     .container {
         grid-template-columns: 1fr;
@@ -306,14 +325,7 @@ body {
     border-top: 1px solid #eee;
     background-color: #fff;
 }
-.text-title {
-    font-family: 'Noto Sans', Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: 600;
-    margin: 20px 0 10px 0;
-    color: #800;
-}
+
 
 /* HYMN */
 .container-h{
@@ -466,5 +478,293 @@ body {
     padding: 5px;
 }
 
-/* HISTORY */
+/* DOWNLOADS - COMPLETION FORM */
+.container-cf{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.page-content-cf{
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 0;
+    margin-bottom: 50px;
+}
+.page-content-cf p {
+    margin: 30px 0 0 0;
+    line-height: 2;
+    color: #666;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
 
+/* DOWNLOADS - ID APPLICATION */
+.container-id{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.page-content-id{
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 0;
+    margin-bottom: 50px;
+}
+.page-content-id p {
+    margin: 30px 0 0 0;
+    line-height: 2;
+    color: #666;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+.page-content-id td {
+    margin: 30px 0 0 0;
+    line-height: 2;
+    color: #666;
+    font-family:  Inter, Verdana, Geneva, Tahoma, sans-serif;
+    vertical-align: top;
+    padding: 8px;
+    border-top: 1px solid #eee;
+    background-color: #fff;
+}
+/* Add your styles for highlighting here */
+.text-highlight:hover {
+    background-color: #f0f0f0; /* Change the background color on hover */
+    cursor: pointer;
+}
+
+/* Add your styles for redirecting here */
+.redirected-section {
+    display: none; /* Hide the redirected section by default */
+}
+
+/* CVASS */
+.container-cv{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.page-content-cv{
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 0;
+    margin-bottom: 50px;
+}
+.page-content-cv p {
+    margin: 30px 0 0 0;
+    line-height: 2;
+    color: #666;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+* {
+    box-sizing: border-box;
+  }
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: goldenrod;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }  
+
+.container-box {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+.container-box::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: maroon;
+    border: 4px solid goldenrod;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+/* Place the container to the left */
+.left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  .right::after {
+    left: -16px;
+  }
+  /* The actual content */
+  .content-cv {
+    padding: 20px 30px;
+    background-color: lightgray;
+    position: relative;
+    border-radius: 6px;
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+    .timeline::after {
+    left: 31px;
+    }
+    
+    /* Full-width containers */
+    .container-box {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+    
+    .container-box::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    }
+  
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+    left: 15px;
+    }
+    
+    /* Make all right containers behave like the left ones */
+    .right {
+    left: 0%;
+    }
+  }
+
+  /* QUICK LINKS - HDF */
+.container-hdf{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.page-content-hdf{
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 0;
+    margin-bottom: 50px;
+}
+.page-content-hdf p {
+    margin: 30px 0 0 0;
+    line-height: 2;
+    color: #666;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ONLINE SERVICES - POLA */
+.container-pola{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.page-content-pola{
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 0;
+    margin-bottom: 50px;
+}
+.page-content-pola p {
+    margin: 30px 0 0 0;
+    line-height: 2;
+    color: #666;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* QUICK LINKS - TANGLAW */
+.container-tanglaw{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.page-content-tanglaw{
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 0;
+    margin-bottom: 50px;
+}
+.page-content-tanglaw p {
+    margin: 30px 0 0 0;
+    line-height: 2;
+    color: #666;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+.image-container-tanglaw {
+    display: flex;
+}
+.image-container-tanglaw img {
+    width: 300px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.t0 {
+    color: #fbaf3b;
+    font-weight: 1000;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 20pt;
+    font-family: "Anton";
+    font-style: normal;
+}
+.t4 {
+    padding-top: 18pt;
+    padding-bottom: 6pt;
+    line-height: 1.0;
+    page-break-after: avoid;
+    orphans: 2;
+    widows: 2;
+    text-align: center;
+}
+.t1 {
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 10pt;
+    font-family: "Amarante";
+    font-style: normal;
+}
+.t2 {
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1.0;
+    orphans: 2;
+    widows: 2;
+    text-align: center;
+}
+.t6 {
+    color: #fbaf3b;
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 60pt;
+    font-family: "Berkshire Swash";
+    font-style: normal;
+}
+.p-text p{
+    margin: 0;
+    color: #000000;
+    font-size: 10pt;
+    font-family: "Amarante";
+}
