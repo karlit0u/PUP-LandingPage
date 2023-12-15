@@ -220,7 +220,6 @@ body {
     left: 50%;
     transform: translateX(-50%);
 }
-
 .dot {
   cursor: pointer;
   height: 15px;
@@ -257,7 +256,6 @@ body {
     padding-bottom: 40px;
     
 }
-
 .container div{
     border-radius: 5px;
     min-height: 100%;;
@@ -267,7 +265,6 @@ body {
     display:block;
     margin-bottom: auto;
 }
-
 .container div img {
     max-width: 100%;
     max-height: 100%;
@@ -287,7 +284,6 @@ body {
     margin-right: auto;
     margin-left: auto;
 }
-
 .page-content-vm{
     min-height: 1px;
     padding-right: 15px;
@@ -310,7 +306,6 @@ body {
     border-top: 1px solid #eee;
     background-color: #fff;
 }
-
 .text-title {
     font-family: 'Noto Sans', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 24px;
@@ -342,3 +337,134 @@ body {
 }
 
 /* HISTORY */
+.container-history{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.page-content-history{
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 0;
+    margin-bottom: 50px;
+}
+.page-content-history p {
+    margin: 30px 0 0 0;
+    line-height: 2;
+    color: #666;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+.page-content-history td {
+    margin: 30px 0 0 0;
+    line-height: 2;
+    color: #666;
+    font-family:  Inter, Verdana, Geneva, Tahoma, sans-serif;
+    vertical-align: top;
+    padding: 8px;
+    border-top: 1px solid #eee;
+    background-color: #fff;
+}
+.image-container-history {
+    display: flex;
+}
+.image-container-history img {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+/* CAMPUS TOUR */
+.container-campus{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.page-content-campus{
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 0;
+    margin-bottom: 50px;
+}
+.page-content-campus p {
+    margin: 30px 0 0 0;
+    line-height: 2;
+    color: #666;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* BOARD OF REGENTS */
+.container-bor{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.page-content-bor{
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 0;
+    margin-bottom: 50px;
+}
+.page-content-bor p {
+    margin: 30px 0 0 0;
+    line-height: 2;
+    color: #666;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+.page-content-bor td {
+    margin: 30px 0 0 0;
+    line-height: 2;
+    color: #666;
+    font-family:  Inter, Verdana, Geneva, Tahoma, sans-serif;
+    vertical-align: top;
+    padding: 8px;
+    border-top: 1px solid #eee;
+    background-color: #fff;
+}
+
+/* UNIVERSITY-CAMPUS OFFICIALS */
+.container-uc{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.page-content-uc{
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 0;
+    margin-bottom: 50px;
+}
+.page-content-uc p {
+    margin: 30px 0 0 0;
+    line-height: 2;
+    color: #666;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+.page-content-uc td {
+    margin: 30px 0 0 0;
+    line-height: 2;
+    color: #666;
+    font-family:  Inter, Verdana, Geneva, Tahoma, sans-serif;
+    vertical-align: top;
+    padding: 8px;
+    border-top: 1px solid #eee;
+    background-color: #fff;
+}
+.image-container-uc {
+    display: flex;
+}
+.image-container-uc img {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+/* HISTORY */
+
