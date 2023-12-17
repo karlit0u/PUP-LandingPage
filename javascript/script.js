@@ -43,12 +43,21 @@ window.onscroll = function() {
 
 function scrollFunction() {
   var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+  var footer = document.querySelector(".footer");
 
   if (
     document.body.scrollTop > 20 ||
     document.documentElement.scrollTop > 20
   ) {
     scrollToTopBtn.style.display = "block";
+    
+    // Check if the user is near the footer
+    var distanceToFooter = footer.offsetTop - window.innerHeight;
+    if (document.body.scrollTop > distanceToFooter || document.documentElement.scrollTop > distanceToFooter) {
+      scrollToTopBtn.style.bottom = footer.clientHeight + 20 + "px";
+    } else {
+      scrollToTopBtn.style.bottom = "30px";
+    }
   } else {
     scrollToTopBtn.style.display = "none";
   }
@@ -72,3 +81,11 @@ function redirectToSection(sectionId) {
   // You can also add additional logic here for further customization or redirection
 }
 
+window.addEventListener('scroll', function () {
+  var header = document.querySelector('.header');
+  if (window.scrollY > 80) {
+      header.classList.add('fixed-header');
+  } else {
+      header.classList.remove('fixed-header');
+  }
+});
