@@ -1,4 +1,8 @@
 <!-- UNDER DEVELOPEMENT -->
+<?php
+    include('includes/top-navbar.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +16,7 @@
     <link rel=icon type="image/png" sizes="16x16" href="images/pupsrclogo.webp">
 
     <!--CSS-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles/style.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -21,64 +25,6 @@
 
 <!---Content-->
 <body>   
-    <!---Header-->
-    <div class="header">
-        <a href="index.html"><img class="logo" src="images/puplogo.png" alt="PUPSRC LOGO"></a>
-        <div class="header-content">
-            <div class="header-name">POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</div>
-            <div class="header-subname">Santa Rosa Branch</div>
-        </div>
-        <div class="navbar-right">
-            <div class="navbar">
-                <a href="index.html">Home</a>
-
-                <!--Quick Links dropdown-->
-                <div class="dropdown">
-                    <button class="dropbtn">Quick Links</button>
-                    <div class="dropdown-content">
-                        <a href="ql_tanglaw.html">TANGLAW</a>
-                        <a href="ql_hdf.html">Health Declaration Form</a>
-                    </div>
-                </div>
-                
-                <!--Services dropdown-->
-                <div class="dropdown">
-                    <button class="dropbtn">Services</button>
-                    <div class="dropdown-content">
-                        <a href="cvass.html">CVASS</a>
-                        <a rel="noopener noreferrer" href="https://pupsrc102.school.blog/cvass101/3/" target="_blank">Inquiry/Request/Set Appointment</a>
-                        <a rel="noreferrer noopener" href="https://pupsrc102.school.blog/services101/" target="_blank">All Services</a>
-                        <a href="pola.html">SMART POLA</a>
-                    </div>
-                </div>
-                
-                <!--Downloads dropdown-->
-                <div class="dropdown">
-                    <button class="dropbtn">Downloads</button>
-                    <div class="dropdown-content">
-                        <a href="download_id_application.html">ID Application</a>
-                        <a href="download_completion_form.html">Completion Form</a>
-                        <a rel="noreferrer noopener" href="https://www.pup.edu.ph/downloads/students/" target="_blank">For Students</a>
-                        <a rel="noreferrer noopener" href="https://www.pup.edu.ph/downloads/employees/" target="_blank">For Faculty and Employees</a>
-                    </div>
-                </div>
-
-                <!--About dropdown-->
-                <div class="dropdown right">
-                    <button class="dropbtn">About</button>
-                    <div class="dropdown-content">
-                        <a href="vision_mission.html">Vision and Mission</a>
-                        <a href="hymn.html" class = "hymn">Hymn </a>
-                        <a href="history.html">History</a>
-                        <a href="campus_virtual_tour.html">Branch Virtual Tour</a>
-                        <a href="board_of_regents.html">Board of Regents</a>
-                        <a href="university_officials.html">University Officials</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!--Body-->
     <section>
         <div class="slideshow-container">
@@ -197,22 +143,12 @@
     </section>
       
     <!-- Footer -->
-    <div class="footer">
-        <div class="contact-info">
-            <p>Email: starosa@pup.edu.ph</p>
-            <p>Contact: 0961 802 3780 ⦁ 0916 703 9775</p>
-            <p>LCA Blvd., Tiongco Subdivision Tagapo Santa Rosa, Laguna | 4026 | Philippines</p>
-        </div>
-        <div class="social-icons">
-            <!-- Change icons to jpg/png file -->
-            <a href="https://www.facebook.com/PUPsrcOfficial" class="social-icon"><i class="fab fa-facebook"></i></a>
-            <!-- <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a> -->
-            <!-- Add more social media icons as needed -->
-        </div>
-    </div>
+    <?php
+        include('includes/footer.php');
+    ?>
     
-    <script src="javascript/script.js"></script>
+    <script src="scripts/script.js"></script>
     <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">&#8679;</button>
+
 </body>
 </html>
